@@ -25,8 +25,7 @@
     "tailwind-merge": "^2.5.5",
     "tailwindcss": "^3.4.17",
     "three": "^0.185.0",
-    "typescript": "latest",
-    "vite": "latest"
+    "typescript": "latest"
   },
   "devDependencies": {
     "caniuse-lite": "^1.0.30001799"
