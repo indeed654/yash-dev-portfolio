@@ -160,20 +160,20 @@ function Hero() {
       <div className="mx-auto grid min-h-[calc(100vh-8rem)] max-w-7xl items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
         <motion.div initial="hidden" animate="show" variants={{ show: { transition: { staggerChildren: 0.08 } } }} className="max-w-4xl">
           <motion.p variants={sectionMotion} className="mb-5 inline-flex items-center gap-2 rounded-full border border-cyan-500/20 bg-white/70 px-4 py-2 text-sm font-semibold text-cyan-800 shadow-glass backdrop-blur">
-            <Sparkles size={16} /> Building production-ready software, not just projects
+            <span className="relative flex h-2 w-2"><span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-orange-400 opacity-75" /><span className="relative inline-flex h-2 w-2 rounded-full bg-orange-400" /></span> Available for ambitious engineering teams
           </motion.p>
           <motion.h1 variants={sectionMotion} className="text-hero font-semibold leading-[0.96] tracking-normal text-ink">
-            Full-stack AI engineer for systems that survive real users.
+            Building the next<br />layer of <span className="bg-gradient-to-r from-orange-400 via-violet-400 to-cyan-300 bg-clip-text text-transparent">intelligent systems.</span>
           </motion.h1>
           <motion.p variants={sectionMotion} className="mt-6 max-w-2xl text-lg leading-8 text-slate-700">
-            {owner.headline}
+            AI engineer and full-stack developer turning complex workflows into precise, fast, human-centered products.
           </motion.p>
           <motion.div variants={sectionMotion} className="mt-8 flex flex-col gap-3 sm:flex-row">
             <MagneticCta href="#projects" variant="primary">
-              View engineering case studies <ArrowRight size={18} />
+              Explore selected work <ArrowRight size={18} />
             </MagneticCta>
             <MagneticCta href="#resume" variant="secondary">
-              Resume center <ArrowDownToLine size={18} />
+              Download résumé <ArrowDownToLine size={18} />
             </MagneticCta>
           </motion.div>
           <motion.div variants={sectionMotion} className="mt-8 flex flex-wrap gap-2">
@@ -187,8 +187,8 @@ function Hero() {
         <motion.aside initial={{ opacity: 0, scale: 0.96 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.7, delay: 0.2 }} className="rounded-[2rem] border border-white/70 bg-white/62 p-5 shadow-glass backdrop-blur-2xl">
           <div className="rounded-[1.5rem] border border-slate-900/10 bg-ink p-5 text-white shadow-2xl">
             <div className="mb-6 flex items-center justify-between">
-              <span className="text-sm font-semibold text-cyan-200">Recruiter Signal</span>
-              <span className="rounded-full bg-lime-400/15 px-3 py-1 text-xs font-semibold text-lime-200">Open to 10-25 LPA roles</span>
+              <span className="text-sm font-semibold text-cyan-200">SYSTEM / 01</span>
+              <span className="rounded-full bg-orange-400/15 px-3 py-1 text-xs font-semibold text-orange-200">Open to work</span>
             </div>
             <div className="grid gap-4">
               {systemHighlights.map((item) => {
